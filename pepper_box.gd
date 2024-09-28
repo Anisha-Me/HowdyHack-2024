@@ -1,20 +1,29 @@
-extends Node2D
+extends Area2D
 
-signal PickUpPepper
+signal PickUp(vegetable)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_process(false)
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if (Input.is_action_pressed("Pick Up")):
-		PickUpPepper.emit()
+	pass
+	
 	
 
-func _on_body_entered(body: Node):
+func body_entered(body):
+	print("helloooooo")
 	set_process(true)
 	
-func _on_body_exited(body: Node):
+	
+func body_exited(body: Node):
 	set_process(false)
+
+	pass # Replace with function body.
+
+
+func _on_player_body_entered(body: Node) -> void:
+	print("helloooooo")

@@ -29,3 +29,8 @@ func _process(delta: float) -> void:
 		
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
+	
+
+func _on_pepper_box_pick_up(vegetable: Variant) -> void:
+	print("PLEASE WORK")
+	pass # Replace with function body.

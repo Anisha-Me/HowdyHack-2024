@@ -23,9 +23,6 @@ func _process(delta):
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-		$AnimatedSprite2D.play("Walk")
-	else:
-		$AnimatedSprite2D.play("Idle")
 
 		
 	position += velocity * delta
@@ -42,15 +39,12 @@ func _body_entered():
 	print("helllo")
 	PickUp.emit
 
-		
-		
-	
-	
-
-
 func _on_pepper_box_pick_up(vegetable: Variant) -> void:
 	print("PLEASE I BEG")
 
 
 func area_entered():
 	print("help me")
+	
+func mouse_entered():
+	print("here we go again")
