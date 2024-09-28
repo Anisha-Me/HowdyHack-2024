@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dmwdum43x0o75"]
+[gd_scene load_steps=4 format=3 uid="uid://dmwdum43x0o75"]
 
 [ext_resource type="Texture2D" uid="uid://d0y77dkxplba" path="res://icon.svg" id="1_vgywo"]
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_morpd"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_n7hi3"]
+
 [node name="Node2D" type="Node2D"]
+position = Vector2(3, 7)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(389, 177)
@@ -19,3 +24,10 @@ texture = ExtResource("1_vgywo")
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D2/Sprite2D"]
 position = Vector2(195, 5)
 texture = ExtResource("1_vgywo")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(382, -199)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+material = SubResource("CanvasItemMaterial_morpd")
+texture = SubResource("ImageTexture_n7hi3")
