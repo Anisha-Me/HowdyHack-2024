@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck154ata4gtnh"]
+
+[ext_resource type="Script" path="res://new_character.gd" id="1_ci2en"]
+[ext_resource type="Texture2D" uid="uid://d0y77dkxplba" path="res://icon.svg" id="1_hyd3d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_excgf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hyd3d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_80fcy"]
+size = Vector2(111, 115.5)
+
+[node name="New_Character" type="Area2D"]
+position = Vector2(-16, 15)
+script = ExtResource("1_ci2en")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(483, 357)
+sprite_frames = SubResource("SpriteFrames_excgf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(478, 358)
+shape = SubResource("RectangleShape2D_80fcy")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(480, 356)
+texture = ExtResource("1_hyd3d")
+metadata/_edit_group_ = true
