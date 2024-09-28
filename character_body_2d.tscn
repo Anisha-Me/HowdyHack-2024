@@ -95,6 +95,6 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tj38y")
 animation = &"Idle"
-frame_progress = 0.0752268
+frame_progress = 0.608995
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
