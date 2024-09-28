@@ -42,6 +42,8 @@ func _body_entered():
 	print("helllo")
 	PickUp.emit
 
+func player_shop_method():
+	pass
 		
 		
 	
