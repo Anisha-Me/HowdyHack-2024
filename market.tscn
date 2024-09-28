@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://ceoky02qsvtta"]
+[gd_scene load_steps=21 format=3 uid="uid://ceoky02qsvtta"]
 
 [ext_resource type="Texture2D" uid="uid://cr201sogkagqg" path="res://Buildings_Colour2.png" id="1_13yvd"]
+[ext_resource type="Script" path="res://market.gd" id="1_vnvhh"]
 [ext_resource type="Texture2D" uid="uid://dxgjukanrmbyk" path="res://Females/F_01-firstframe.png" id="2_xryfd"]
 [ext_resource type="Texture2D" uid="uid://desagiglwi61f" path="res://Females/F_01.png" id="3_rx0id"]
 
@@ -124,6 +125,7 @@ height = 74.0
 
 [node name="Market" type="StaticBody2D"]
 position = Vector2(5, 2)
+script = ExtResource("1_vnvhh")
 
 [node name="shopart" type="AnimatedSprite2D" parent="."]
 position = Vector2(134, 154)
@@ -145,3 +147,5 @@ shape = SubResource("RectangleShape2D_e56sl")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(132, 180)
 shape = SubResource("CapsuleShape2D_jmk7f")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

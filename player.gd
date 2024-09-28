@@ -35,6 +35,8 @@ func _process(delta):
 		# See the note below about the following boolean assignment.
 		$AnimatedSprite2D.flip_h = velocity.x < 0
 
+func player_shop_method():
+	pass
 		
 		
 	
