@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var screen_size 
-var speed = 50
+var speed = 100
 var motion = Vector2.ZERO
 
 func _ready():
