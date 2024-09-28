@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://dtkhr0bkauqgi"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_1j6j7"]
+[ext_resource type="Script" path="res://player.gd" id="1_2r6sl"]
 [ext_resource type="Texture2D" uid="uid://c5mjsn1eyggxv" path="res://2 Dog 2/Walk.png" id="1_fv63g"]
 [ext_resource type="Texture2D" uid="uid://cafgqw6a3qwhr" path="res://2 Dog 2/Idle.png" id="2_1tyb3"]
 
@@ -88,11 +88,11 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_1j6j7")
+script = ExtResource("1_2r6sl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tj38y")
-animation = &"Idle"
-frame_progress = 0.789034
+animation = &"Walk"
+frame_progress = 0.629561
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
