@@ -84,11 +84,13 @@ animations = [{
 }],
 "loop": true,
 "name": &"Walk",
-"speed": 5.0
+"speed": 9.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(593, 315)
 script = ExtResource("1_2r6sl")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tj38y")
