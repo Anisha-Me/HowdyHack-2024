@@ -45,22 +45,3 @@ func _body_entered():
 
 func player_shop_method():
 	pass
-		
-		
-	
-	
-
-
-func _on_pepper_box_pick_up(vegetable: Variant) -> void:
-	print("PLEASE I BEG")
-
-
-func area_entered():
-	print("help me")
-
-
-func _on_pepper_box_area_entered(area: Area2D) -> void:
-	print("working again??")
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.

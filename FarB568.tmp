@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://b0x0ph4go037w"]
+[gd_scene load_steps=9 format=3 uid="uid://cx65b7vcap05p"]
 
 [ext_resource type="Script" path="res://Farm.gd" id="1_fp2ie"]
 [ext_resource type="PackedScene" uid="uid://dopkknnia1b2k" path="res://Player.tscn" id="3_5jw2h"]
-[ext_resource type="PackedScene" path="res://pepper_box.tscn" id="3_gi3fn"]
+[ext_resource type="PackedScene" uid="uid://cohukfk0e6wj5" path="res://pepper_box.tscn" id="3_gi3fn"]
 [ext_resource type="PackedScene" uid="uid://ctthk1t2he1qi" path="res://Plant Boxes/tomato_box.tscn" id="4_r2tqm"]
-[ext_resource type="PackedScene" path="res://Plant Boxes/corn_box.tscn" id="5_tsbjs"]
-[ext_resource type="PackedScene" path="res://Plant Boxes/potato_box.tscn" id="6_3lurf"]
-[ext_resource type="PackedScene" path="res://Plant Boxes/carrot_box.tscn" id="7_prsvm"]
+[ext_resource type="PackedScene" uid="uid://c8i3mqi4vufmb" path="res://Plant Boxes/corn_box.tscn" id="5_tsbjs"]
+[ext_resource type="PackedScene" uid="uid://q70dsevdqp7l" path="res://Plant Boxes/potato_box.tscn" id="6_3lurf"]
+[ext_resource type="PackedScene" uid="uid://0ylej6v17eor" path="res://Plant Boxes/carrot_box.tscn" id="7_prsvm"]
+[ext_resource type="PackedScene" uid="uid://ui2bflffav8f" path="res://growing_zone.tscn" id="8_1gbcj"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_fp2ie")
@@ -29,9 +30,6 @@ position = Vector2(632, 104)
 
 [node name="gz1" parent="." instance=ExtResource("8_1gbcj")]
 
-[node name="gz2" parent="." instance=ExtResource("8_1gbcj")]
-position = Vector2(547, 233)
-
 [connection signal="PickUp" from="Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
 [connection signal="area_entered" from="Pepper Box" to="Player" method="_on_pepper_box_area_entered"]
 [connection signal="body_entered" from="Pepper Box" to="." method="_on_pepper_box_body_entered"]
@@ -40,5 +38,3 @@ position = Vector2(547, 233)
 [connection signal="body_entered" from="potato_box" to="." method="_on_potato_box_body_entered"]
 [connection signal="body_entered" from="carrot_box" to="." method="_on_carrot_box_body_entered"]
 [connection signal="body_entered" from="gz1" to="." method="_on_gz_1_body_entered"]
-[connection signal="body_entered" from="gz2" to="." method="_on_gz_2_body_entered"]
-[connection signal="body_entered" from="gz2" to="." method="_on_gz_1_body_entered"]
