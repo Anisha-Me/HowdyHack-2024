@@ -23,7 +23,18 @@ func initiate_growing(vegetable):
 	if (vegetable == "Tomato"):
 		$AnimatedSprite2D.show()
 		$AnimatedSprite2D.play("Tomato_growing")
-		
+	elif (vegetable == "Pepper"):
+		$AnimatedSprite2D.show()
+		$AnimatedSprite2D.play("Pepper_growing")
+	elif (vegetable == "Carrot"):
+		$AnimatedSprite2D.show()
+		$AnimatedSprite2D.play("Carrot_growing")
+	elif (vegetable == "Potato"):
+		$AnimatedSprite2D.show()
+		$AnimatedSprite2D.play("Potato_growing")	
+	elif (vegetable == "Corn"):
+		$AnimatedSprite2D.show()
+		$AnimatedSprite2D.play("Corn_growing")
 	else:
 		print("NOPE")
 		

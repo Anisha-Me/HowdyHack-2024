@@ -1,6 +1,6 @@
-[gd_scene load_steps=8 format=4 uid="uid://biw45gailox4l"]
+[gd_scene load_steps=8 format=4 uid="uid://br15qbaui81on"]
 
-[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_7jydj"]
+[ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="1_7jydj"]
 [ext_resource type="PackedScene" uid="uid://ceoky02qsvtta" path="res://market.tscn" id="1_15wrn"]
 [ext_resource type="Script" path="res://main_area.gd" id="1_rhfvu"]
 [ext_resource type="PackedScene" uid="uid://bll0xcw74j76t" path="res://market_menu.tscn" id="2_8rhvi"]

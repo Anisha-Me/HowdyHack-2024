@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=29 format=3 uid="uid://clbrkgig0t6jw"]
+[gd_resource type="TileSet" load_steps=29 format=3 uid="uid://duha8rly668e3"]
 
 [ext_resource type="Texture2D" uid="uid://bsql7was8y3d3" path="res://hjm-iso-houses.png" id="1_bredl"]
 [ext_resource type="Texture2D" uid="uid://dhquqv50dtve8" path="res://submission_daneeklu/tilesets/tallgrass.png" id="1_xsas5"]
