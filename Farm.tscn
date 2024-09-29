@@ -147,6 +147,13 @@ shape = SubResource("RectangleShape2D_gw4vx")
 
 [node name="Overlay" parent="." instance=ExtResource("11_5y2gb")]
 
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 68.0
+offset_top = 88.0
+offset_right = 376.0
+offset_bottom = 220.0
+text = "Press 'e' to harvest fully grown crops!"
+
 [connection signal="PickUp" from="Node2D/Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
 [connection signal="area_entered" from="Node2D/Pepper Box" to="Player" method="_on_pepper_box_area_entered"]
 [connection signal="body_entered" from="Node2D/Pepper Box" to="." method="_on_pepper_box_body_entered"]
