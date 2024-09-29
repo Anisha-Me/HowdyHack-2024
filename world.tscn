@@ -11,8 +11,19 @@ script = ExtResource("1_jeye0")
 
 [node name="AM" parent="." instance=ExtResource("3_2pc7s")]
 
-[node name="Node2D" parent="." instance=ExtResource("4_pc8yp")]
+[node name="Farm" parent="." instance=ExtResource("4_pc8yp")]
 
 [node name="MainArea" parent="." instance=ExtResource("5_kuna4")]
 
 [node name="MainMenu" parent="." instance=ExtResource("2_rof2w")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -8.0
+offset_top = -10.0
+offset_right = 1151.0
+offset_bottom = 652.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 4
+size_flags_vertical = 4

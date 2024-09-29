@@ -4,8 +4,7 @@ extends StaticBody2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	self.hide()
-	$leftbutton.hide()
-	$rightbutton.hide()
+	$Building_Menu.hide()
 	
 	pass # Replace with function body.
 
@@ -13,6 +12,13 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	
+
+func initialize() -> void:
+	$sell.show()
+	$buy.show()
+	$Building_Menu.hide()
+	#TODO: HIDE THINGSSSSSSSSSSSSSSSSSSSSSs
 
 
 func _on_sell_button_pressed() -> void:
@@ -27,4 +33,5 @@ func _on_sell_button_pressed() -> void:
 func _on_buy_button_pressed() -> void:
 	$sell.hide()
 	$buy.hide()
+	$Building_Menu.show()
 	

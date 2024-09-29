@@ -150,7 +150,7 @@ position = Vector2(132, 180)
 shape = SubResource("CapsuleShape2D_jmk7f")
 
 [node name="MarketMenu" parent="." instance=ExtResource("6_7i86g")]
-position = Vector2(165, 108)
+position = Vector2(-327, -76)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

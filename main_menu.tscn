@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=4 uid="uid://bncx6us2b8ipk"]
+[gd_scene load_steps=3 format=4 uid="uid://bncx6us2b8ipk"]
 
 [ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="1_hl3ow"]
 [ext_resource type="Script" path="res://main_menu.gd" id="1_l3v7d"]
-[ext_resource type="PackedScene" uid="uid://dtkhr0bkauqgi" path="res://character_body_2d.tscn" id="3_hecuv"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -16,7 +15,6 @@ offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_l3v7d")
-metadata/_edit_group_ = true
 
 [node name="Grass" type="TileMapLayer" parent="."]
 position = Vector2(3, 6)
@@ -39,19 +37,18 @@ grow_vertical = 2
 
 [node name="StartButton" type="Button" parent="PanelContainer"]
 layout_mode = 2
+size_flags_vertical = 4
 text = "Start"
 
 [node name="OptionsButton" type="Button" parent="PanelContainer"]
 layout_mode = 2
+size_flags_vertical = 4
 text = "Options"
 
 [node name="QuitButton" type="Button" parent="PanelContainer"]
 layout_mode = 2
+size_flags_vertical = 4
 text = "Quit"
-
-[node name="Player" parent="." instance=ExtResource("3_hecuv")]
-position = Vector2(127, 558)
-scale = Vector2(4, 4)
 
 [connection signal="pressed" from="PanelContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="PanelContainer/OptionsButton" to="." method="_on_options_button_pressed"]

@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=4 uid="uid://br15qbaui81on"]
+[gd_scene load_steps=9 format=4 uid="uid://br15qbaui81on"]
 
 [ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="1_7jydj"]
 [ext_resource type="PackedScene" uid="uid://ceoky02qsvtta" path="res://market.tscn" id="1_15wrn"]
 [ext_resource type="Script" path="res://main_area.gd" id="1_rhfvu"]
-[ext_resource type="PackedScene" uid="uid://bll0xcw74j76t" path="res://market_menu.tscn" id="2_8rhvi"]
 [ext_resource type="PackedScene" uid="uid://dopkknnia1b2k" path="res://Player.tscn" id="4_5c8rw"]
 [ext_resource type="Script" path="res://farm_teleporter.gd" id="5_jnkej"]
 [ext_resource type="PackedScene" uid="uid://vktirnd5de7p" path="res://Overlay.tscn" id="7_moxxk"]
@@ -35,10 +34,8 @@ tile_map_data = PackedByteArray("AAAAAAQADQAGAAoAAAAAAAUADQAGAAsAAAAAAAYADQAGAAw
 tile_set = ExtResource("1_7jydj")
 
 [node name="Market" parent="." instance=ExtResource("1_15wrn")]
-scale = Vector2(2, 2)
-
-[node name="MarketMenu" parent="." instance=ExtResource("2_8rhvi")]
-scale = Vector2(2, 2)
+position = Vector2(212, 45)
+scale = Vector2(1.97269, 1.90262)
 
 [node name="Player" parent="." instance=ExtResource("4_5c8rw")]
 position = Vector2(542, 564)

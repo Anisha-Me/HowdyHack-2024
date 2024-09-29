@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://b8q0e6wquemgv"]
+
+[ext_resource type="Texture2D" uid="uid://cpso7a5mjff4" path="res://commons.png" id="1_488lf"]
+[ext_resource type="Script" path="res://building_menu.gd" id="1_xlxnk"]
+[ext_resource type="Texture2D" uid="uid://chw4l84b38i6k" path="res://isometric_office_5.svg" id="2_crnnw"]
+[ext_resource type="Texture2D" uid="uid://bqw105ggan57" path="res://render/house_3_c.png" id="3_3o6iy"]
+[ext_resource type="Texture2D" uid="uid://b4mks06qsdfgu" path="res://watchtower_lvl2-exp_full_size.png" id="4_x5ia7"]
+[ext_resource type="Texture2D" uid="uid://bt6hwma5gwwn4" path="res://university (1).svg" id="5_bmi0j"]
+
+[sub_resource type="Theme" id="Theme_die1e"]
+
+[node name="Building_Menu" type="ColorRect"]
+offset_left = -2.0
+offset_top = 1.0
+offset_right = 599.0
+offset_bottom = 508.0
+scale = Vector2(0.79728, 0.700341)
+script = ExtResource("1_xlxnk")
+
+[node name="Commons" type="Sprite2D" parent="."]
+position = Vector2(92.25, 141.75)
+scale = Vector2(0.524691, 0.51227)
+texture = ExtResource("1_488lf")
+
+[node name="Zachry" type="Sprite2D" parent="."]
+position = Vector2(297, 145)
+scale = Vector2(0.211744, 0.154107)
+texture = ExtResource("2_crnnw")
+
+[node name="Commons_Button" type="Button" parent="."]
+offset_left = 13.0
+offset_top = 192.0
+offset_right = 201.0
+offset_bottom = 223.0
+theme = SubResource("Theme_die1e")
+text = "Buy Commons for $100"
+
+[node name="Zachry_Button" type="Button" parent="."]
+offset_left = 215.0
+offset_top = 191.0
+offset_right = 376.0
+offset_bottom = 222.0
+theme = SubResource("Theme_die1e")
+text = "Buy Zachry for $300"
+
+[node name="Kyle" type="Sprite2D" parent="."]
+position = Vector2(464, 138)
+scale = Vector2(0.205469, 0.155469)
+texture = ExtResource("3_3o6iy")
+
+[node name="Kyle_Button" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 191.0
+offset_right = 572.0
+offset_bottom = 222.0
+theme = SubResource("Theme_die1e")
+text = "Buy Kyle Field for $600"
+
+[node name="Rudder" type="Sprite2D" parent="."]
+position = Vector2(224.774, 316.906)
+scale = Vector2(0.091059, 0.101736)
+texture = ExtResource("4_x5ia7")
+
+[node name="Rudder_Button" type="Button" parent="."]
+offset_left = 127.372
+offset_top = 376.558
+offset_right = 306.372
+offset_bottom = 407.558
+theme = SubResource("Theme_die1e")
+text = "Buy Rudder for $1,000"
+
+[node name="Plaza" type="Sprite2D" parent="."]
+position = Vector2(465.603, 323.119)
+scale = Vector2(0.847655, 0.626953)
+texture = ExtResource("5_bmi0j")
+
+[node name="Plaza_Button" type="Button" parent="."]
+offset_left = 333.949
+offset_top = 380.287
+offset_right = 575.949
+offset_bottom = 411.287
+theme = SubResource("Theme_die1e")
+text = "Buy Academic Plaza for $2,000"
+
+[node name="Back_Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 540.527
+offset_top = 453.61
+offset_right = 590.527
+offset_bottom = 484.61
+text = "BACK"
