@@ -18,10 +18,10 @@ color = Color(1, 0.65, 0.825, 0.501961)
 metadata/_edit_group_ = true
 
 [node name="Building_Menu" parent="." instance=ExtResource("2_dhdys")]
-offset_left = 322.0
-offset_top = 75.0
-offset_right = 929.0
-offset_bottom = 587.0
+offset_left = 333.0
+offset_top = 51.0
+offset_right = 940.0
+offset_bottom = 563.0
 
 [node name="sell" type="Button" parent="."]
 offset_left = 506.0
@@ -38,5 +38,6 @@ offset_right = 645.0
 offset_bottom = 246.0
 text = "BUY"
 
+[connection signal="back" from="Building_Menu" to="." method="_on_building_menu_back"]
 [connection signal="pressed" from="sell" to="." method="_on_sell_button_pressed"]
 [connection signal="pressed" from="buy" to="." method="_on_buy_button_pressed"]

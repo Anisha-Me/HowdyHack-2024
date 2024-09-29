@@ -27,3 +27,7 @@ grow_horizontal = 1
 grow_vertical = 1
 size_flags_horizontal = 4
 size_flags_vertical = 4
+
+[connection signal="tree_entered" from="AM" to="." method="_on_am_tree_entered"]
+[connection signal="commons_ready" from="MainArea" to="." method="_on_main_area_commons_ready"]
+[connection signal="commons_ready" from="MainArea" to="AM" method="_on_main_area_commons_ready"]

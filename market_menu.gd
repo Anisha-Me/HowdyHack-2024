@@ -1,5 +1,14 @@
 extends StaticBody2D
 
+var commons_build = false
+var zachry_build = false
+var kyle_build = false
+var plaza_build = false
+var rudder_build = false
+
+
+signal commons
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -10,8 +19,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+
 	
 
 func initialize() -> void:
@@ -35,3 +43,9 @@ func _on_buy_button_pressed() -> void:
 	$buy.hide()
 	$Building_Menu.show()
 	
+
+
+func _on_building_menu_back() -> void:
+	$sell.show()
+	$buy.show()
+	$Building_Menu.hide()

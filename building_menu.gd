@@ -1,5 +1,8 @@
 extends ColorRect
 
+signal back
+
+
 var commons_sold = false
 var zachry_sold = false
 var plaza_sold = false
@@ -15,33 +18,49 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	if(World.commons_build):
+		$Commons_Button.text = "SOLD"
+	if(World.kyle_build):
+		$Kyle_Button.text = "SOLD"
+	if(World.plaza_build):
+		$Plaza_Button.text = "SOLD"
+	if(World.zachry_build):
+		$Zachry_Button.text = "SOLD"
+	if(World.rudder_build):
+		$Rudder_Button.text = "SOLD"
+
 	
 func _on_Commons_Button_pressed() -> void:
-	if(World.money >= 100 and commons_sold == false):
+	if(World.money >= 100 and World.commons_build == false):
 		$Commons_Button.text = "SOLD"
 		World.money -= 100
-		commons_sold = true
+		World.commons_build = true
 func _on_Zachry_Button_pressed() -> void:
-	if(World.money >= 300 and zachry_sold == false):
+	if(World.money >= 300 and World.zachry_build == false):
 		$Zachry_Button.text = "SOLD"
 		World.money -= 300
-		zachry_sold = true
+		World.zachry_build = true
 func _on_Kyle_Button_pressed() -> void:
-	if(World.money >= 600 and kyle_sold == false):
+	if(World.money >= 600 and World.kyle_build == false):
 		$Kyle_Button.text = "SOLD"
 		World.money -= 600
-		kyle_sold = true
+		World.kyle_build = true
 func _on_Rudder_Button_pressed() -> void:
-	if(World.money >= 1000 and rudder_sold == false):
+	if(World.money >= 1000 and World.rudder_build == false):
 		$Rudder_Button.text = "SOLD"
 		World.money -= 1000
-		rudder_sold = true
+		World.rudder_build = true
 func _on_Plaza_Button_pressed() -> void:
-	if(World.money >= 2000 and plaza_sold == false):
+	if(World.money >= 2000 and World.plaza_build == false):
 		$Plaza_Button.text = "SOLD"
 		World.money -= 2000
-		plaza_sold = true
+		World.plaza_build = true
 
-func _on_Back_Button_pressed() -> void:
-	$Building_Menu.hide()
+	
+
+
+func _on_back_button_pressed() -> void:
+	print("Pressed")
+	self.hide() 
+	back.emit()
 	

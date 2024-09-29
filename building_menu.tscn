@@ -89,3 +89,10 @@ offset_top = 453.61
 offset_right = 590.527
 offset_bottom = 484.61
 text = "BACK"
+
+[connection signal="pressed" from="Commons_Button" to="." method="_on_Commons_Button_pressed"]
+[connection signal="pressed" from="Zachry_Button" to="." method="_on_Zachry_Button_pressed"]
+[connection signal="pressed" from="Kyle_Button" to="." method="_on_Kyle_Button_pressed"]
+[connection signal="pressed" from="Rudder_Button" to="." method="_on_Rudder_Button_pressed"]
+[connection signal="pressed" from="Plaza_Button" to="." method="_on_Plaza_Button_pressed"]
+[connection signal="pressed" from="Back_Button" to="." method="_on_back_button_pressed"]
