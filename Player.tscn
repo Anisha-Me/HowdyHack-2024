@@ -1,10 +1,10 @@
 [gd_scene load_steps=34 format=3 uid="uid://dopkknnia1b2k"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_6wmut"]
-[ext_resource type="Texture2D" uid="uid://barl4djbheq13" path="res://Reveille/Attack.png" id="2_f5nvw"]
-[ext_resource type="Texture2D" uid="uid://cafgqw6a3qwhr" path="res://Reveille/Idle.png" id="3_1pk6k"]
+[ext_resource type="Texture2D" uid="uid://barl4djbheq13" path="res://2 Dog 2/Attack.png" id="2_f5nvw"]
+[ext_resource type="Texture2D" uid="uid://cafgqw6a3qwhr" path="res://2 Dog 2/Idle.png" id="3_1pk6k"]
 [ext_resource type="Texture2D" uid="uid://c0lgmu0385prl" path="res://Reveille/Dog_Tomato_Sprites.png" id="4_4jw1a"]
-[ext_resource type="Texture2D" uid="uid://c5mjsn1eyggxv" path="res://Reveille/Walk.png" id="4_b4hyn"]
+[ext_resource type="Texture2D" uid="uid://c5mjsn1eyggxv" path="res://2 Dog 2/Walk.png" id="4_b4hyn"]
 [ext_resource type="Texture2D" uid="uid://bx6gmwgprxkf4" path="res://Reveille/Dog_Tomato_Walk.png" id="4_k6xes"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_moqql"]

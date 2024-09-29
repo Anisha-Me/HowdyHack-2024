@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://biw45gailox4l"]
+
+[ext_resource type="PackedScene" uid="uid://ceoky02qsvtta" path="res://market.tscn" id="1_15wrn"]
+[ext_resource type="PackedScene" path="res://market_menu.tscn" id="2_8rhvi"]
+
+[node name="MainArea" type="Node2D"]
+
+[node name="Market" parent="." instance=ExtResource("1_15wrn")]
+
+[node name="MarketMenu" parent="." instance=ExtResource("2_8rhvi")]

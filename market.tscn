@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dxgjukanrmbyk" path="res://Females/F_01-firstframe.png" id="2_xryfd"]
 [ext_resource type="Texture2D" uid="uid://desagiglwi61f" path="res://Females/F_01.png" id="3_rx0id"]
 [ext_resource type="PackedScene" uid="uid://dopkknnia1b2k" path="res://Player.tscn" id="5_oob5c"]
-[ext_resource type="PackedScene" uid="uid://bll0xcw74j76t" path="res://market_menu.tscn" id="6_7i86g"]
+[ext_resource type="PackedScene" path="res://market_menu.tscn" id="6_7i86g"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v5mk7"]
 animations = [{

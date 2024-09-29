@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=4 uid="uid://bncx6us2b8ipk"]
 
-[ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="1_hl3ow"]
+[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_hl3ow"]
 [ext_resource type="Script" path="res://main_menu.gd" id="1_l3v7d"]
 
 [node name="MainMenu" type="Control"]
