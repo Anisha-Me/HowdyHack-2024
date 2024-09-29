@@ -150,9 +150,16 @@ shape = SubResource("RectangleShape2D_gw4vx")
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 68.0
 offset_top = 88.0
-offset_right = 376.0
-offset_bottom = 220.0
-text = "Press 'e' to harvest fully grown crops!"
+offset_right = 362.0
+offset_bottom = 258.0
+text = "Press 'e' to harvest fully grown crops!
+Potato: 1 coin
+Tomato: 3 coin
+Carrot: 7 coin
+Corn: 12 coin
+Pepper: 20 coin
+
+"
 
 [connection signal="PickUp" from="Node2D/Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
 [connection signal="area_entered" from="Node2D/Pepper Box" to="Player" method="_on_pepper_box_area_entered"]

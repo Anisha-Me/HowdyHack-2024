@@ -30,7 +30,7 @@ func initialize() -> void:
 
 
 func _on_sell_button_pressed() -> void:
-	World.money += World.num_peppers + World.num_corn + World.num_potatos + World.num_carrots + World.num_tomatoes
+	World.money += 20*(World.num_peppers) + 12*(World.num_corn) + World.num_potatos + 7*(World.num_carrots) + 3*(World.num_tomatoes)
 	World.num_peppers = 0
 	World.num_corn = 0
 	World.num_potatos = 0

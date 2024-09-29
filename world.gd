@@ -1,5 +1,5 @@
 extends Node2D
-var money = 1000
+var money = 4000
 var num_peppers = 0
 var num_corn = 0
 var num_potatos = 0

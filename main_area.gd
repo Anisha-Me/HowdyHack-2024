@@ -16,6 +16,26 @@ func _on_a_m_teleporter_body_entered(body: Node2D) -> void:
 	
 
 
+func _on_market_commons_market() -> void:
+		World.commons_build = true
+
+
+func _on_market_kyle_market() -> void:
+		World.kyle_build = true
+
+
+func _on_market_plaza_market() -> void:
+		World.plaza_build = true
+
+
+func _on_market_rudder_market() -> void:
+		World.rudder_build = true
+
+
+func _on_market_zachry_market() -> void:
+		World.zachry_build = true
+
+
 func _on_tree_entered() -> void:
 	if World.froma_m:
 		$Player.global_position = Vector2(500,100)
