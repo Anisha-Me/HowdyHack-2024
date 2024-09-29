@@ -1,11 +1,75 @@
-[gd_scene load_steps=10 format=3 uid="uid://ui2bflffav8f"]
+[gd_scene load_steps=26 format=3 uid="uid://ui2bflffav8f"]
 
 [ext_resource type="Script" path="res://growing_zone.gd" id="1_b7ty2"]
-[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_xduan"]
+[ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="1_xduan"]
 [ext_resource type="Texture2D" uid="uid://bppbe1mfn0he1" path="res://submission_daneeklu/tilesets/plants.png" id="2_tysl7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bbbmk"]
 size = Vector2(26, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqheh"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5pm7g"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(64, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47p2w"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(64, 128, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6xie"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(64, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrd87"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp4al"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(192, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bl4lm"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(192, 128, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvw53"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(192, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcf0e"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yaiyt"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(128, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fsl43"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(128, 128, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqngl"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(128, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fusq0"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2xic"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(32, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri1nn"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(32, 128, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34r85"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(32, 192, 32, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s45lj"]
 atlas = ExtResource("2_tysl7")
@@ -27,6 +91,74 @@ region = Rect2(0, 192, 28, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_uqheh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5pm7g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47p2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6xie")
+}],
+"loop": true,
+"name": &"Carrot_growing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrd87")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp4al")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bl4lm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvw53")
+}],
+"loop": true,
+"name": &"Corn_growing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hcf0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yaiyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fsl43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqngl")
+}],
+"loop": true,
+"name": &"Pepper_growing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fusq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2xic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri1nn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_34r85")
+}],
+"loop": false,
+"name": &"Potato_growing",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_s45lj")
 }, {
 "duration": 1.0,
@@ -41,11 +173,6 @@ animations = [{
 "loop": false,
 "name": &"Tomato_growing",
 "speed": 1.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"Tomato_plucked",
-"speed": 5.0
 }]
 
 [node name="Growing Zone" type="Area2D"]
@@ -64,6 +191,7 @@ shape = SubResource("RectangleShape2D_bbbmk")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -27)
 sprite_frames = SubResource("SpriteFrames_w1d1n")
-animation = &"Tomato_growing"
+animation = &"Corn_growing"
+frame_progress = 0.553756
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
