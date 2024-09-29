@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://br15qbaui81on"]
+[gd_scene load_steps=10 format=4 uid="uid://br15qbaui81on"]
 
 [ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="1_7jydj"]
 [ext_resource type="PackedScene" uid="uid://ceoky02qsvtta" path="res://market.tscn" id="1_15wrn"]
@@ -6,11 +6,16 @@
 [ext_resource type="PackedScene" uid="uid://bll0xcw74j76t" path="res://market_menu.tscn" id="2_8rhvi"]
 [ext_resource type="PackedScene" uid="uid://dopkknnia1b2k" path="res://Player.tscn" id="4_5c8rw"]
 [ext_resource type="Script" path="res://farm_teleporter.gd" id="5_jnkej"]
+[ext_resource type="PackedScene" uid="uid://vktirnd5de7p" path="res://Overlay.tscn" id="7_moxxk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f66nv"]
 size = Vector2(14, 212)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqeyr"]
+size = Vector2(368.125, 20)
+
 [node name="MainArea" type="Node2D"]
+position = Vector2(0, -6)
 script = ExtResource("1_rhfvu")
 
 [node name="Grass" type="TileMapLayer" parent="."]
@@ -45,4 +50,15 @@ script = ExtResource("5_jnkej")
 position = Vector2(3, 307)
 shape = SubResource("RectangleShape2D_f66nv")
 
+[node name="A_M Teleporter" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="A_M Teleporter"]
+position = Vector2(620.938, 8)
+shape = SubResource("RectangleShape2D_hqeyr")
+
+[node name="Overlay" parent="." instance=ExtResource("7_moxxk")]
+offset = Vector2(0, -3.495)
+transform = Transform2D(1, 0, 0, 1, 0, -3.495)
+
 [connection signal="body_entered" from="Farm Teleporter" to="." method="_on_farm_teleporter_body_entered"]
+[connection signal="body_entered" from="A_M Teleporter" to="." method="_on_a_m_teleporter_body_entered"]

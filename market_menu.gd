@@ -23,9 +23,8 @@ func _on_sell_button_pressed() -> void:
 	World.num_carrots = 0
 	World.num_tomatoes = 0
 	
-	pass # Replace with function body.
 
 func _on_buy_button_pressed() -> void:
 	$sell.hide()
 	$buy.hide()
-	pass # Replace with function body.
+	

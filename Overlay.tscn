@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=3 uid="uid://vktirnd5de7p"]
+
+[ext_resource type="Texture2D" uid="uid://bpc8rgdjct4vk" path="res://submission_daneeklu/ui/ui_preview_smol.png" id="1_0846w"]
+[ext_resource type="Script" path="res://coins_label.gd" id="2_256k4"]
+[ext_resource type="Script" path="res://potatoes_label.gd" id="3_6yhkn"]
+[ext_resource type="Script" path="res://tomatoes_label.gd" id="4_g6wg4"]
+[ext_resource type="Script" path="res://peppers_label.gd" id="5_ikv4w"]
+[ext_resource type="Script" path="res://corn_label.gd" id="6_445xb"]
+[ext_resource type="Script" path="res://carrots_label.gd" id="7_5fjpo"]
+
+[node name="Overlay" type="CanvasLayer"]
+
+[node name="UiPreviewSmol" type="Sprite2D" parent="."]
+position = Vector2(119, 596)
+scale = Vector2(6, 6)
+texture = ExtResource("1_0846w")
+
+[node name="Coins_Label" type="Label" parent="."]
+offset_left = 52.0
+offset_top = 480.0
+offset_right = 99.0
+offset_bottom = 503.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Coins: 
+"
+script = ExtResource("2_256k4")
+
+[node name="Potatoes_Label" type="Label" parent="."]
+offset_left = 53.0
+offset_top = 507.0
+offset_right = 100.0
+offset_bottom = 530.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Potatoes: 0"
+script = ExtResource("3_6yhkn")
+
+[node name="Tomatoes_Label" type="Label" parent="."]
+offset_left = 53.0
+offset_top = 535.0
+offset_right = 134.0
+offset_bottom = 558.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Tomatoes: 0"
+script = ExtResource("4_g6wg4")
+
+[node name="Peppers_Label" type="Label" parent="."]
+offset_left = 53.0
+offset_top = 563.0
+offset_right = 134.0
+offset_bottom = 586.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Peppers: 0"
+script = ExtResource("5_ikv4w")
+
+[node name="Corn_Label" type="Label" parent="."]
+offset_left = 51.0
+offset_top = 589.0
+offset_right = 132.0
+offset_bottom = 612.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Corn: 0"
+script = ExtResource("6_445xb")
+
+[node name="Carrots_Label" type="Label" parent="."]
+offset_left = 51.0
+offset_top = 619.0
+offset_right = 132.0
+offset_bottom = 642.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Carrots:
+"
+script = ExtResource("7_5fjpo")
