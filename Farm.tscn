@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://h0dytddirvv7"]
+[gd_scene load_steps=7 format=3 uid="uid://dvaeactjbv210"]
 
 [ext_resource type="Script" path="res://Farm.gd" id="1_fp2ie"]
-[ext_resource type="PackedScene" uid="uid://bces4josty7rj" path="res://Player.tscn" id="3_5jw2h"]
-[ext_resource type="PackedScene" uid="uid://ddn1wo7nowv22" path="res://pepper_box.tscn" id="3_gi3fn"]
+[ext_resource type="PackedScene" uid="uid://c6gdgl6npg6tr" path="res://Player.tscn" id="3_5jw2h"]
+[ext_resource type="PackedScene" path="res://pepper_box.tscn" id="3_gi3fn"]
 [ext_resource type="Texture2D" uid="uid://cafgqw6a3qwhr" path="res://2 Dog 2/Idle.png" id="4_cal3q"]
 [ext_resource type="Script" path="res://test.tres.gd" id="5_ur273"]
 
