@@ -100,9 +100,12 @@ animations = [{
 "frames": [],
 "loop": true,
 "name": &"Pepper",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_6wc8w")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_khi6q")
 }, {
@@ -134,14 +137,13 @@ size = Vector2(27, 24)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvcwl"]
 size = Vector2(27, 24)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="Area2D"]
 position = Vector2(594, 322)
 script = ExtResource("1_6wmut")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tj38y")
-animation = &"Action"
-frame_progress = 0.69848
+animation = &"Pepper"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4.5, 12)
