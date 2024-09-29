@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://market.gd" id="1_vnvhh"]
 [ext_resource type="Texture2D" uid="uid://dxgjukanrmbyk" path="res://Females/F_01-firstframe.png" id="2_xryfd"]
 [ext_resource type="Texture2D" uid="uid://desagiglwi61f" path="res://Females/F_01.png" id="3_rx0id"]
-[ext_resource type="PackedScene" uid="uid://cufkdsxb75pe8" path="res://Player.tscn" id="5_oob5c"]
+[ext_resource type="PackedScene" uid="uid://dopkknnia1b2k" path="res://Player.tscn" id="5_oob5c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v5mk7"]
 animations = [{
@@ -150,5 +150,9 @@ position = Vector2(132, 180)
 shape = SubResource("CapsuleShape2D_jmk7f")
 
 [node name="Player" parent="." instance=ExtResource("5_oob5c")]
+
+[node name="MenuButton" type="MenuButton" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

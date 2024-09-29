@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cufkdsxb75pe8"]
+[gd_scene load_steps=22 format=3 uid="uid://dopkknnia1b2k"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_6wmut"]
 [ext_resource type="Texture2D" uid="uid://barl4djbheq13" path="res://2 Dog 2/Attack.png" id="2_f5nvw"]
@@ -97,11 +97,6 @@ animations = [{
 "name": &"Idle",
 "speed": 5.0
 }, {
-"frames": [],
-"loop": true,
-"name": &"Pepper",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6wc8w")
@@ -124,11 +119,6 @@ animations = [{
 "loop": true,
 "name": &"Walk",
 "speed": 9.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"new_animation_1",
-"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uj8bi"]
@@ -137,13 +127,14 @@ size = Vector2(27, 24)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvcwl"]
 size = Vector2(27, 24)
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="CharacterBody2D"]
 position = Vector2(594, 322)
 script = ExtResource("1_6wmut")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tj38y")
-animation = &"Pepper"
+animation = &"Action"
+frame_progress = 0.69848
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4.5, 12)
