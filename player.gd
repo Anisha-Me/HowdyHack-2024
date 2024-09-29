@@ -25,11 +25,27 @@ func _process(delta):
 		velocity = velocity.normalized() * speed
 		if(vegetable == "Tomato"):
 			$AnimatedSprite2D.play("Tomato_Walk")
+		elif(vegetable == "Pepper"):
+			$AnimatedSprite2D.play("Pepper_Walk")
+		elif(vegetable == "Corn"):
+			$AnimatedSprite2D.play("Corn_Walk")
+		elif(vegetable == "Carrot"):
+			$AnimatedSprite2D.play("Carrot_Walk")
+		elif(vegetable == "Potato"):
+			$AnimatedSprite2D.play("Potato_Walk")
 		else:
 			$AnimatedSprite2D.play("Walk")
 	else:
-		if(vegetable=="Tomato"):
+		if(vegetable == "Tomato"):
 			$AnimatedSprite2D.play("Tomato_Idle")
+		elif(vegetable == "Pepper"):
+			$AnimatedSprite2D.play("Pepper_Idle")
+		elif(vegetable == "Corn"):
+			$AnimatedSprite2D.play("Corn_Idle")
+		elif(vegetable == "Carrot"):
+			$AnimatedSprite2D.play("Carrot_Idle")
+		elif(vegetable == "Potato"):
+			$AnimatedSprite2D.play("Potato_Idle")
 		else:
 			$AnimatedSprite2D.play("Idle")
 
@@ -39,9 +55,18 @@ func _process(delta):
 	
 	if velocity.x != 0:
 		if(vegetable == "Tomato"):
-			$AnimatedSprite2D.animation = "Tomato_Walk"
+			$AnimatedSprite2D.play("Tomato_Walk")
+		elif(vegetable == "Pepper"):
+			$AnimatedSprite2D.play("Pepper_Walk")
+		elif(vegetable == "Corn"):
+			$AnimatedSprite2D.play("Corn_Walk")
+		elif(vegetable == "Carrot"):
+			$AnimatedSprite2D.play("Carrot_Walk")
+		elif(vegetable == "Potato"):
+			$AnimatedSprite2D.play("Potato_Walk")
 		else:
-			$AnimatedSprite2D.animation = "Walk"
+			$AnimatedSprite2D.play("Walk")
+			
 		$AnimatedSprite2D.flip_v = false
 		# See the note below about the following boolean assignment.
 		$AnimatedSprite2D.flip_h = velocity.x < 0

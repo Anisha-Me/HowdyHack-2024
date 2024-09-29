@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://ui2bflffav8f"]
 
 [ext_resource type="Script" path="res://growing_zone.gd" id="1_b7ty2"]
-[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_xduan"]
+[ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="1_xduan"]
 [ext_resource type="Texture2D" uid="uid://bppbe1mfn0he1" path="res://submission_daneeklu/tilesets/plants.png" id="2_tysl7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bbbmk"]

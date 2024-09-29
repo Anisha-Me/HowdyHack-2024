@@ -3,7 +3,6 @@ extends Node2D
 var planted = false
 var harvestable = false
 var entered = false
-var tempveg = "Nothing"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -21,22 +20,10 @@ func _process(delta: float) -> void:
 
 func initiate_growing(vegetable):
 	planted = true
-	tempveg = vegetable
 	if (vegetable == "Tomato"):
 		$AnimatedSprite2D.show()
 		$AnimatedSprite2D.play("Tomato_growing")
-	elif (vegetable == "Pepper"):
-		$AnimatedSprite2D.show()
-		$AnimatedSprite2D.play("Pepper_growing")
-	elif (vegetable == "Potato"):
-		$AnimatedSprite2D.show()
-		$AnimatedSprite2D.play("Potato_growing")	
-	elif (vegetable == "Corn"):
-		$AnimatedSprite2D.show()
-		$AnimatedSprite2D.play("Corn_growing")	
-	elif (vegetable == "Carrot"):
-		$AnimatedSprite2D.show()
-		$AnimatedSprite2D.play("Carrot_growing")	
+		
 	else:
 		print("NOPE")
 		
