@@ -1,10 +1,9 @@
-[gd_scene load_steps=24 format=3 uid="uid://3c830j78wd4m"]
+[gd_scene load_steps=22 format=3 uid="uid://dopkknnia1b2k"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_6wmut"]
 [ext_resource type="Texture2D" uid="uid://barl4djbheq13" path="res://2 Dog 2/Attack.png" id="2_f5nvw"]
 [ext_resource type="Texture2D" uid="uid://cafgqw6a3qwhr" path="res://2 Dog 2/Idle.png" id="3_1pk6k"]
 [ext_resource type="Texture2D" uid="uid://c5mjsn1eyggxv" path="res://2 Dog 2/Walk.png" id="4_b4hyn"]
-[ext_resource type="Texture2D" uid="uid://bu38rbmk488x" path="res://Reveille_tomato.png" id="5_mh6me"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_moqql"]
 atlas = ExtResource("2_f5nvw")
@@ -61,10 +60,6 @@ region = Rect2(192, 0, 48, 48)
 [sub_resource type="AtlasTexture" id="AtlasTexture_c354h"]
 atlas = ExtResource("4_b4hyn")
 region = Rect2(240, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mi163"]
-atlas = ExtResource("5_mh6me")
-region = Rect2(64, 0, 64, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tj38y"]
 animations = [{
@@ -124,14 +119,6 @@ animations = [{
 "loop": true,
 "name": &"Walk",
 "speed": 9.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mi163")
-}],
-"loop": true,
-"name": &"new_animation_1",
-"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uj8bi"]
@@ -141,13 +128,13 @@ size = Vector2(27, 24)
 size = Vector2(27, 24)
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(592, 325)
+position = Vector2(594, 322)
 script = ExtResource("1_6wmut")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, 2)
 sprite_frames = SubResource("SpriteFrames_tj38y")
-animation = &"Walk"
+animation = &"Action"
+frame_progress = 0.69848
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4.5, 12)
