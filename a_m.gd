@@ -48,13 +48,3 @@ func _on_market_teleporter_body_entered(body: Node2D) -> void:
 		World.froma_m = true
 		get_tree().change_scene_to_file("res://Main Area.tscn")
 		print("Teleport from A&M to market")
-
-
-
-		
-	
-
-
-func _on_main_area_commons_ready() -> void:
-	print("commmmmons")
-	$Commons.show()

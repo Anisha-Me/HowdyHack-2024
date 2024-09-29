@@ -147,7 +147,7 @@ shape = SubResource("RectangleShape2D_gw4vx")
 
 [node name="Overlay" parent="." instance=ExtResource("11_5y2gb")]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="Instructions" type="RichTextLabel" parent="."]
 offset_left = 68.0
 offset_top = 88.0
 offset_right = 362.0
@@ -159,6 +159,43 @@ Carrot: 7 coin
 Corn: 12 coin
 Pepper: 20 coin
 
+"
+
+[node name="Potato" type="RichTextLabel" parent="."]
+offset_left = 784.0
+offset_top = 313.0
+offset_right = 861.0
+offset_bottom = 340.0
+text = "Potato"
+
+[node name="Carrot" type="RichTextLabel" parent="."]
+offset_left = 912.0
+offset_top = 392.0
+offset_right = 989.0
+offset_bottom = 419.0
+text = "Carrot
+"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 908.0
+offset_top = 259.0
+offset_right = 974.0
+offset_bottom = 299.0
+text = "Tomato"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 920.0
+offset_top = 514.0
+offset_right = 971.0
+offset_bottom = 554.0
+text = "Corn"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = 784.0
+offset_top = 461.0
+offset_right = 889.0
+offset_bottom = 501.0
+text = "Pepper
 "
 
 [connection signal="PickUp" from="Node2D/Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
