@@ -1,11 +1,57 @@
-[gd_scene load_steps=3 format=3 uid="uid://ui2bflffav8f"]
+[gd_scene load_steps=10 format=3 uid="uid://ui2bflffav8f"]
 
+[ext_resource type="Script" path="res://growing_zone.gd" id="1_b7ty2"]
 [ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_xduan"]
+[ext_resource type="Texture2D" uid="uid://bppbe1mfn0he1" path="res://submission_daneeklu/tilesets/plants.png" id="2_tysl7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bbbmk"]
 size = Vector2(26, 25)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_s45lj"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(0, 0, 28, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66cf0"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(0, 64, 28, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5h38"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(0, 128, 28, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anmc8"]
+atlas = ExtResource("2_tysl7")
+region = Rect2(0, 192, 28, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w1d1n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s45lj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66cf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5h38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_anmc8")
+}],
+"loop": true,
+"name": &"Tomato_growing",
+"speed": 0.1
+}, {
+"frames": [],
+"loop": true,
+"name": &"Tomato_plucked",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
+position = Vector2(412, 271)
+script = ExtResource("1_b7ty2")
+metadata/_edit_group_ = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray(0, 0, 255, 255, 255, 255, 6, 0, 2, 0, 6, 0, 0, 0, 255, 255, 0, 0, 6, 0, 2, 0, 7, 0, 0, 0, 0, 0, 255, 255, 6, 0, 3, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6, 0, 3, 0, 7, 0, 0, 0)
@@ -16,3 +62,10 @@ tile_set = ExtResource("1_xduan")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_bbbmk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -27)
+sprite_frames = SubResource("SpriteFrames_w1d1n")
+animation = &"Tomato_growing"
+frame = 2
+frame_progress = 0.639665
