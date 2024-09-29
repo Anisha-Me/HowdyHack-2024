@@ -102,9 +102,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_i6xie")
 }],
-"loop": true,
+"loop": false,
 "name": &"Carrot_growing",
-"speed": 5.0
+"speed": 1.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -119,9 +119,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_uvw53")
 }],
-"loop": true,
+"loop": false,
 "name": &"Corn_growing",
-"speed": 5.0
+"speed": 1.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -136,9 +136,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yqngl")
 }],
-"loop": true,
+"loop": false,
 "name": &"Pepper_growing",
-"speed": 5.0
+"speed": 1.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -191,7 +191,6 @@ shape = SubResource("RectangleShape2D_bbbmk")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -27)
 sprite_frames = SubResource("SpriteFrames_w1d1n")
-animation = &"Corn_growing"
-frame_progress = 0.553756
+animation = &"Tomato_growing"
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
