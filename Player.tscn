@@ -368,7 +368,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Corn_Walk",
-"speed": 5.0
+"speed": 9.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -543,7 +543,7 @@ script = ExtResource("1_6wmut")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tj38y")
-animation = &"Corn_Idle"
+animation = &"Tomato_Walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4.5, 12)
