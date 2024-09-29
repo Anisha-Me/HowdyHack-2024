@@ -15,5 +15,3 @@ func _process(delta: float) -> void:
 
 func body_entered(body):		
 	pass
-	
-	

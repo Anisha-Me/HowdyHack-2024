@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=4 uid="uid://c8i3mqi4vufmb"]
+
+[ext_resource type="Script" path="res://Plant Boxes/corn_box.gd" id="1_qrksi"]
+[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="2_48x3k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4k6b8"]
+size = Vector2(31, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_56yvo"]
+size = Vector2(31, 36)
+
+[node name="corn_box" type="Area2D"]
+script = ExtResource("1_qrksi")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD/////AgAcABQAAAD//wAAAgAcABUAAAD//wEAAgAcABYAAAAAAP//AgAdABQAAAAAAAAAAgAdABUAAAAAAAEAAgAdABYAAAA=")
+tile_set = ExtResource("2_48x3k")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 8)
+shape = SubResource("RectangleShape2D_4k6b8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 8)
+shape = SubResource("RectangleShape2D_56yvo")

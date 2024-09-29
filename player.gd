@@ -1,8 +1,9 @@
-extends Area2D
+extends CharacterBody2D
 
 var screen_size 
 var speed = 100
 var motion = Vector2.ZERO
+var vegetable  = "Nothing"
 
 signal PickUp
 

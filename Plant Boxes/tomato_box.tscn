@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=4 uid="uid://ctthk1t2he1qi"]
+[gd_scene load_steps=5 format=4 uid="uid://ctthk1t2he1qi"]
 
 [ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_1fmr5"]
+[ext_resource type="Script" path="res://Plant Boxes/tomato_box.gd" id="1_5tx2t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fwlu8"]
 size = Vector2(31, 36)
@@ -9,10 +10,10 @@ size = Vector2(31, 36)
 size = Vector2(31, 36)
 
 [node name="tomato_box" type="Area2D"]
+script = ExtResource("1_5tx2t")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-position = Vector2(0, 1)
-tile_map_data = PackedByteArray("AABHAP//AgAaABQAAABHAAAAAgAaABUAAABHAAEAAgAaABYAAABIAP//AgAbABQAAABIAAAAAgAbABUAAABIAAEAAgAbABYAAAA=")
+tile_map_data = PackedByteArray("AAD/////AgAaABQAAAD//wAAAgAaABUAAAD//wEAAgAaABYAAAAAAP//AgAbABQAAAAAAAAAAgAbABUAAAAAAAEAAgAbABYAAAA=")
 tile_set = ExtResource("1_1fmr5")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

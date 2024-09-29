@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=4 uid="uid://q70dsevdqp7l"]
+
+[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_o6fax"]
+[ext_resource type="Script" path="res://Plant Boxes/potato_box.gd" id="1_t1en4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_psuxy"]
+size = Vector2(31, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pvte7"]
+size = Vector2(31, 36)
+
+[node name="potato_box" type="Area2D"]
+script = ExtResource("1_t1en4")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD/////AgAYABQAAAD//wAAAgAYABUAAAD//wEAAgAYABYAAAAAAP//AgAZABQAAAAAAAAAAgAZABUAAAAAAAEAAgAZABYAAAA=")
+tile_set = ExtResource("1_o6fax")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 8)
+shape = SubResource("RectangleShape2D_psuxy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 8)
+shape = SubResource("RectangleShape2D_pvte7")

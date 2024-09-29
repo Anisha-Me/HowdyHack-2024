@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=4 uid="uid://0ylej6v17eor"]
+
+[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_5pav5"]
+[ext_resource type="Script" path="res://Plant Boxes/carrot_box.gd" id="1_ybqaw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ny4hs"]
+size = Vector2(31, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b5161"]
+size = Vector2(31, 36)
+
+[node name="carrot_box" type="Area2D"]
+script = ExtResource("1_ybqaw")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD/////AgASABQAAAD//wAAAgASABUAAAD//wEAAgASABYAAAAAAP//AgATABQAAAAAAAAAAgATABUAAAAAAAEAAgATABYAAAA=")
+tile_set = ExtResource("1_5pav5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 8)
+shape = SubResource("RectangleShape2D_ny4hs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 8)
+shape = SubResource("RectangleShape2D_b5161")
