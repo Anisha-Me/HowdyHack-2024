@@ -56,3 +56,7 @@ func _on_pepper_box_pick_up(vegetable: Variant) -> void:
 
 func area_entered():
 	print("help me")
+
+
+func _on_pepper_box_area_entered(area: Area2D) -> void:
+	print("working again??")
