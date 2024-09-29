@@ -10,10 +10,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.has_method("player_shop_method"):
 		print("yuhh market time!!!")
 		
-		
-	
-	
+	# maybe this also works???:
+	# if $Market.overlaps_body($player):
+		#print()

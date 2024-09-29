@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0x0ph4go037w"]
+[gd_scene load_steps=4 format=3 uid="uid://co4plbqqyo37v"]
 
 [ext_resource type="Script" path="res://Farm.gd" id="1_fp2ie"]
-[ext_resource type="PackedScene" uid="uid://dopkknnia1b2k" path="res://Player.tscn" id="3_5jw2h"]
-[ext_resource type="PackedScene" path="res://pepper_box.tscn" id="3_gi3fn"]
+[ext_resource type="PackedScene" uid="uid://cufkdsxb75pe8" path="res://Player.tscn" id="3_5jw2h"]
+[ext_resource type="PackedScene" uid="uid://cohukfk0e6wj5" path="res://pepper_box.tscn" id="3_gi3fn"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_fp2ie")
@@ -14,3 +14,4 @@ position = Vector2(362, 356)
 
 [connection signal="PickUp" from="Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
 [connection signal="area_entered" from="Pepper Box" to="Player" method="_on_pepper_box_area_entered"]
+[connection signal="area_entered" from="Player" to="Pepper Box" method="_on_player_area_entered"]
