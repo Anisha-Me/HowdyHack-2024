@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=4 uid="uid://cohukfk0e6wj5"]
+
+[ext_resource type="Script" path="res://pepper_box.gd" id="1_vvd31"]
+[ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="2_kx7we"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccqgv"]
+size = Vector2(31, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sknep"]
+size = Vector2(31, 36)
+
+[node name="Pepper Box" type="Area2D"]
+script = ExtResource("1_vvd31")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD/////AgAQABQAAAD//wAAAgAQABUAAAD//wEAAgAQABYAAAAAAP//AgARABQAAAAAAAAAAgARABUAAAAAAAEAAgARABYAAAA=")
+tile_set = ExtResource("2_kx7we")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 8)
+shape = SubResource("RectangleShape2D_ccqgv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 8)
+shape = SubResource("RectangleShape2D_sknep")
