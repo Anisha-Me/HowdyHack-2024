@@ -1,12 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://cx65b7vcap05p"]
+[gd_scene load_steps=8 format=3 uid="uid://b0x0ph4go037w"]
 
 [ext_resource type="Script" path="res://Farm.gd" id="1_fp2ie"]
 [ext_resource type="PackedScene" uid="uid://dopkknnia1b2k" path="res://Player.tscn" id="3_5jw2h"]
-[ext_resource type="PackedScene" uid="uid://cohukfk0e6wj5" path="res://pepper_box.tscn" id="3_gi3fn"]
+[ext_resource type="PackedScene" path="res://pepper_box.tscn" id="3_gi3fn"]
 [ext_resource type="PackedScene" uid="uid://ctthk1t2he1qi" path="res://Plant Boxes/tomato_box.tscn" id="4_r2tqm"]
-[ext_resource type="PackedScene" uid="uid://c8i3mqi4vufmb" path="res://Plant Boxes/corn_box.tscn" id="5_tsbjs"]
-[ext_resource type="PackedScene" uid="uid://q70dsevdqp7l" path="res://Plant Boxes/potato_box.tscn" id="6_3lurf"]
-[ext_resource type="PackedScene" uid="uid://0ylej6v17eor" path="res://Plant Boxes/carrot_box.tscn" id="7_prsvm"]
+[ext_resource type="PackedScene" path="res://Plant Boxes/corn_box.tscn" id="5_tsbjs"]
+[ext_resource type="PackedScene" path="res://Plant Boxes/potato_box.tscn" id="6_3lurf"]
+[ext_resource type="PackedScene" path="res://Plant Boxes/carrot_box.tscn" id="7_prsvm"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_fp2ie")

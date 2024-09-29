@@ -3,7 +3,6 @@ extends StaticBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	
 	pass # Replace with function body.
 
 
@@ -11,13 +10,14 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.has_method("player_shop_method"):
-		print("yuhh market time!!!")
-		
-		
-	
-		
-		
+
+func _on_sell_button_pressed() -> void:
+	World.money = 1
 	
 	
+	pass # Replace with function body.
+
+func _on_buy_button_pressed() -> void:
+	$sell.hide()
+	$buy.hide()
+	pass # Replace with function body.

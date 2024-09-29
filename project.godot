@@ -15,6 +15,11 @@ run/main_scene="res://character_body_2d.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://global.gd"
+World="*res://world.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"
