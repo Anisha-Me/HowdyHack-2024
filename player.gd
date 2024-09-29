@@ -50,10 +50,3 @@ func _process(delta):
 
 func player_shop_method():
 	pass
-
-
-func _on_pepper_box_area_entered(area: Area2D) -> void:
-	print("working again??")
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.

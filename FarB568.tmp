@@ -30,9 +30,6 @@ position = Vector2(632, 104)
 
 [node name="gz1" parent="." instance=ExtResource("8_1gbcj")]
 
-[node name="gz2" parent="." instance=ExtResource("8_1gbcj")]
-position = Vector2(547, 233)
-
 [connection signal="PickUp" from="Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
 [connection signal="area_entered" from="Pepper Box" to="Player" method="_on_pepper_box_area_entered"]
 [connection signal="body_entered" from="Pepper Box" to="." method="_on_pepper_box_body_entered"]
@@ -41,5 +38,3 @@ position = Vector2(547, 233)
 [connection signal="body_entered" from="potato_box" to="." method="_on_potato_box_body_entered"]
 [connection signal="body_entered" from="carrot_box" to="." method="_on_carrot_box_body_entered"]
 [connection signal="body_entered" from="gz1" to="." method="_on_gz_1_body_entered"]
-[connection signal="body_entered" from="gz2" to="." method="_on_gz_2_body_entered"]
-[connection signal="body_entered" from="gz2" to="." method="_on_gz_1_body_entered"]
