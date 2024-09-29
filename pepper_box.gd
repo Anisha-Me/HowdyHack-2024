@@ -25,5 +25,7 @@ func body_exited(body: Node):
 	pass # Replace with function body.
 
 
-func _on_player_body_entered(body: Node) -> void:
-	print("helloooooo")
+
+
+func _on_player_area_entered(area: Area2D) -> void:
+	print("work this time?")

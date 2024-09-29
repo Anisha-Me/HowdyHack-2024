@@ -1,13 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dvaeactjbv210"]
+[gd_scene load_steps=4 format=3 uid="uid://dvaeactjbv210"]
 
 [ext_resource type="Script" path="res://Farm.gd" id="1_fp2ie"]
 [ext_resource type="PackedScene" uid="uid://c6gdgl6npg6tr" path="res://Player.tscn" id="3_5jw2h"]
-[ext_resource type="PackedScene" path="res://pepper_box.tscn" id="3_gi3fn"]
-[ext_resource type="Texture2D" uid="uid://cafgqw6a3qwhr" path="res://2 Dog 2/Idle.png" id="4_cal3q"]
-[ext_resource type="Script" path="res://test.tres.gd" id="5_ur273"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ay6gh"]
-size = Vector2(169, 81)
+[ext_resource type="PackedScene" uid="uid://ddn1wo7nowv22" path="res://pepper_box.tscn" id="3_gi3fn"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_fp2ie")
@@ -17,13 +12,5 @@ position = Vector2(362, 356)
 
 [node name="Player" parent="." instance=ExtResource("3_5jw2h")]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(163, 50)
-texture = ExtResource("4_cal3q")
-script = ExtResource("5_ur273")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
-position = Vector2(1.5, 17.5)
-shape = SubResource("RectangleShape2D_ay6gh")
-
 [connection signal="PickUp" from="Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
+[connection signal="area_entered" from="Player" to="Pepper Box" method="_on_player_area_entered"]
