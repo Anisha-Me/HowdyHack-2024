@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0x0ph4go037w"]
+
+[ext_resource type="Script" path="res://Farm.gd" id="1_fp2ie"]
+[ext_resource type="PackedScene" uid="uid://dopkknnia1b2k" path="res://Player.tscn" id="3_5jw2h"]
+[ext_resource type="PackedScene" path="res://pepper_box.tscn" id="3_gi3fn"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_fp2ie")
+
+[node name="Pepper Box" parent="." instance=ExtResource("3_gi3fn")]
+position = Vector2(362, 356)
+
+[node name="Player" parent="." instance=ExtResource("3_5jw2h")]
+
+[connection signal="PickUp" from="Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
+[connection signal="area_entered" from="Pepper Box" to="Player" method="_on_pepper_box_area_entered"]
