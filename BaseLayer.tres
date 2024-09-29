@@ -1,5 +1,6 @@
-[gd_resource type="TileSet" load_steps=27 format=3 uid="uid://clbrkgig0t6jw"]
+[gd_resource type="TileSet" load_steps=29 format=3 uid="uid://clbrkgig0t6jw"]
 
+[ext_resource type="Texture2D" uid="uid://bsql7was8y3d3" path="res://hjm-iso-houses.png" id="1_bredl"]
 [ext_resource type="Texture2D" uid="uid://dhquqv50dtve8" path="res://submission_daneeklu/tilesets/tallgrass.png" id="1_xsas5"]
 [ext_resource type="Texture2D" uid="uid://bclbb162y0rr5" path="res://submission_daneeklu/tilesets/wheat.png" id="2_x61sf"]
 [ext_resource type="Texture2D" uid="uid://mu40efuxpe03" path="res://submission_daneeklu/tilesets/youngwheat.png" id="3_rrig5"]
@@ -13,6 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://c2ngpefvcvwp7" path="res://submission_daneeklu/tilesets/reed.png" id="9_tb7pa"]
 [ext_resource type="Texture2D" uid="uid://cliisrfihd77e" path="res://submission_daneeklu/tilesets/sand.png" id="10_wfgwh"]
 [ext_resource type="Texture2D" uid="uid://cppcc6tfljx3m" path="res://submission_daneeklu/tilesets/sandwater.png" id="11_pyvff"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_chiln"]
+texture = ExtResource("1_bredl")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_elgxo"]
 resource_name = "Tall Grass"
@@ -4081,3 +4085,4 @@ sources/10 = SubResource("TileSetAtlasSource_6wnal")
 sources/11 = SubResource("TileSetAtlasSource_gj4qi")
 sources/12 = SubResource("TileSetAtlasSource_7ern5")
 sources/13 = SubResource("TileSetAtlasSource_8ompg")
+sources/0 = SubResource("TileSetAtlasSource_chiln")
