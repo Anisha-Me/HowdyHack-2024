@@ -173,3 +173,7 @@ func _on_gz_15_body_entered(body: Node2D) -> void:
 	$gz15.entered = true
 	if body.has_method("player_shop_method") and $gz15.planted == false:
 		$gz15.initiate_growing($Player.vegetable)
+
+
+func _on_market_teleporter_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://Main Area.tscn")

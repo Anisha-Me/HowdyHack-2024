@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://cx65b7vcap05p"]
+[gd_scene load_steps=12 format=4 uid="uid://cx65b7vcap05p"]
 
 [ext_resource type="Script" path="res://Farm.gd" id="1_fp2ie"]
 [ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="2_oa23r"]
@@ -9,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://q70dsevdqp7l" path="res://Plant Boxes/potato_box.tscn" id="6_3lurf"]
 [ext_resource type="PackedScene" uid="uid://0ylej6v17eor" path="res://Plant Boxes/carrot_box.tscn" id="7_prsvm"]
 [ext_resource type="PackedScene" uid="uid://ui2bflffav8f" path="res://growing_zone.tscn" id="8_1gbcj"]
+[ext_resource type="Script" path="res://market_teleporter.gd" id="10_0ybq0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gw4vx"]
+size = Vector2(20, 144)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_fp2ie")
@@ -133,6 +137,13 @@ z_as_relative = false
 position = Vector2(246, 502)
 scale = Vector2(2, 2)
 
+[node name="Market Teleporter" type="Area2D" parent="."]
+script = ExtResource("10_0ybq0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Market Teleporter"]
+position = Vector2(1144, 327)
+shape = SubResource("RectangleShape2D_gw4vx")
+
 [connection signal="PickUp" from="Node2D/Pepper Box" to="Player" method="_on_pepper_box_pick_up"]
 [connection signal="area_entered" from="Node2D/Pepper Box" to="Player" method="_on_pepper_box_area_entered"]
 [connection signal="body_entered" from="Node2D/Pepper Box" to="." method="_on_pepper_box_body_entered"]
@@ -170,3 +181,4 @@ scale = Vector2(2, 2)
 [connection signal="body_exited" from="gz14" to="." method="_on_gz_14_body_exited"]
 [connection signal="body_entered" from="gz15" to="." method="_on_gz_15_body_entered"]
 [connection signal="body_exited" from="gz15" to="." method="_on_gz_15_body_exited"]
+[connection signal="body_entered" from="Market Teleporter" to="." method="_on_market_teleporter_body_entered"]
