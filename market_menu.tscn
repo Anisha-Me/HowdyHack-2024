@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bll0xcw74j76t"]
 
 [ext_resource type="Script" path="res://market_menu.gd" id="1_xmf0i"]
-[ext_resource type="PackedScene" uid="uid://b8q0e6wquemgv" path="res://building_menu.tscn" id="2_dhdys"]
+[ext_resource type="PackedScene" path="res://building_menu.tscn" id="2_dhdys"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_12l5b"]
 
