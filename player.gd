@@ -3,8 +3,7 @@ extends Area2D
 var screen_size 
 var speed = 100
 var motion = Vector2.ZERO
-
-signal PickUp
+var vegetable;
 
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -38,9 +37,6 @@ func _process(delta):
 		$AnimatedSprite2D.flip_h = velocity.x < 0
 	
 	
-func _body_entered():
-	print("helllo")
-	PickUp.emit
 
 func player_shop_method():
 	pass
@@ -49,14 +45,6 @@ func player_shop_method():
 	
 	
 
-
-func _on_pepper_box_pick_up(vegetable: Variant) -> void:
-	print("PLEASE I BEG")
-
-
-func area_entered():
-	print("help me")
-
-
 func _on_pepper_box_area_entered(area: Area2D) -> void:
-	print("working again??")
+	vegetable = "Pepper"
+	print(vegetable)

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=4 uid="uid://ctthk1t2he1qi"]
+
+[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="1_1fmr5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fwlu8"]
+size = Vector2(31, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aqodf"]
+size = Vector2(31, 36)
+
+[node name="tomato_box" type="Area2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(0, 1)
+tile_map_data = PackedByteArray("AABHAP//AgAaABQAAABHAAAAAgAaABUAAABHAAEAAgAaABYAAABIAP//AgAbABQAAABIAAAAAgAbABUAAABIAAEAAgAbABYAAAA=")
+tile_set = ExtResource("1_1fmr5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 8)
+shape = SubResource("RectangleShape2D_fwlu8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 8)
+shape = SubResource("RectangleShape2D_aqodf")

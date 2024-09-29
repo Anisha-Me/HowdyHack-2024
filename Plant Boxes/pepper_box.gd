@@ -1,6 +1,5 @@
 extends Area2D
 
-signal PickUp(vegetable)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,8 +22,6 @@ func body_exited(body: Node):
 	set_process(false)
 
 	pass # Replace with function body.
-
-
 
 
 func _on_player_area_entered(area: Area2D) -> void:
