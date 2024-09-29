@@ -5,7 +5,6 @@ var speed = 100
 var motion = Vector2.ZERO
 var vegetable  = "Nothing"
 
-signal PickUp
 
 func _ready():
 	screen_size = get_viewport_rect().size

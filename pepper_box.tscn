@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=4 uid="uid://cohukfk0e6wj5"]
 
 [ext_resource type="Script" path="res://pepper_box.gd" id="1_vvd31"]
-[ext_resource type="TileSet" uid="uid://duha8rly668e3" path="res://BaseLayer.tres" id="2_kx7we"]
+[ext_resource type="TileSet" uid="uid://clbrkgig0t6jw" path="res://BaseLayer.tres" id="2_kx7we"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ccqgv"]
 size = Vector2(31, 36)
