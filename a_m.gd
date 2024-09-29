@@ -8,7 +8,7 @@ func _ready() -> void:
 		$Zachry.hide()
 		if(World.commons_build):
 			$Commons.show()
-		elif(World.kyle_build):
+		if(World.kyle_build):
 			$Kyle.show()
 		if(World.plaza_build):
 			$Plaza.show()
@@ -33,6 +33,7 @@ func _process(delta: float) -> void:
 	if(World.commons_build):
 		$Commons.show()
 	elif(World.kyle_build):
+		print("kyle_built")
 		$Kyle.show()
 	if(World.plaza_build):
 		$Plaza.show()

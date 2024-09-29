@@ -60,6 +60,11 @@ texture = ExtResource("5_1pfkr")
 position = Vector2(835, 185)
 texture = ExtResource("6_5bubd")
 
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(605, 393)
+scale = Vector2(0.210938, 0.195313)
+texture = ExtResource("12_q8v2w")
+
 [node name="Market Teleporter" type="Area2D" parent="."]
 position = Vector2(618, 669)
 scale = Vector2(0.2, 0.2)
@@ -78,10 +83,5 @@ autoplay = true
 parameters/looping = true
 
 [node name="Overlay" parent="." instance=ExtResource("11_7pvpr")]
-
-[node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(605, 393)
-scale = Vector2(0.210938, 0.195313)
-texture = ExtResource("12_q8v2w")
 
 [connection signal="body_entered" from="Market Teleporter" to="." method="_on_market_teleporter_body_entered"]

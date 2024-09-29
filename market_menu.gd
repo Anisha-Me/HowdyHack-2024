@@ -1,11 +1,5 @@
 extends StaticBody2D
 
-var commons_build = false
-var zachry_build = false
-var kyle_build = false
-var plaza_build = false
-var rudder_build = false
-
 
 signal commons
 
